@@ -26,9 +26,9 @@ function App() {
     <div>
       <Router>
         <nav className="container">
-          <h1>
-            React Plants <span role="img">🌿</span>
-          </h1>
+				<NavLink to="/">
+					<h1>React Plants <span role="img">🌿</span></h1>
+				</NavLink>
           <ul className="steps">
             <li>
               <NavLink exact to="/">
