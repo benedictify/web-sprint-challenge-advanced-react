@@ -51,6 +51,8 @@ const CheckoutForm = (props) => {
         <button>Checkout</button>
       </form>
 
+			{console.log(values.firstName)}
+
       {showSuccessMessage && (
         <div className="success-message" data-testid="successMessage">
           <p>
