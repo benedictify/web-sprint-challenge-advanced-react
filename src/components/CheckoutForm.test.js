@@ -19,11 +19,11 @@ test("shows success message on submit with form details", () => {
 
 	// what does it mean when an input is valid?
 	
-	// input name="firstName"
-	const firstName = screen.getByLabelText(/first name/i);
-	userEvent.type(firstName, "Benedict")
-	// console.log(firstName);
-	console.log(expect(firstName).toHaveValue(/first name/i))
+	// input name="first"
+	const first = screen.findByLabelText(/first name/i);
+	userEvent.type(first, "Benedict")
+
+	expect(first).toHaveTextContent(/[a-z]+/i)
 
 	// any letters a-z/i
 	// [A-Za-z]+
