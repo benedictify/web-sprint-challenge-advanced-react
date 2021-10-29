@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import useForm from "../hooks/useForm";
 
 // This form should be handled by a "useForm" custom hook
@@ -6,7 +6,7 @@ import useForm from "../hooks/useForm";
 // and replace the necessary stateful logic from CheckoutForm with the hook
 
 const CheckoutForm = (props) => {
-	const [ handleChanges, handleSubmit, showSuccessMessage, values ] = useForm(props);
+	const { handleChanges, handleSubmit, showSuccessMessage, values } = useForm(props);
 
 	return (
     <>
